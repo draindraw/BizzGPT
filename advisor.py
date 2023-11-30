@@ -21,7 +21,7 @@ os.environ['GOOGLE_API_KEY'] = "AIzaSyAbhkn4KQxk8lBNtVEF3sNXV1e47SzO2Ic"
 
 llm = GooglePalm(temperature = 0.3)
 
-memory = ConversationBufferMemory(memory_key = 'chat_history', return_messages = True)
+memory = ConversationBufferMemory(memory_key = 'chat_history', return_messages = False)
 
 class InputData(BaseModel):
     question: str
